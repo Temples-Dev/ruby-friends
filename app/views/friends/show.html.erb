@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @friend %>
+
+<div class="btn-group" role="group" aria-label="actions">
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class: "text-white btn btn-success mr-3" %> 
+  <%= link_to "Back to friends", friends_path, class:"text-white btn btn-success mr-3" %>
+
+  <%= button_to "Destroy this friend", @friend, method: :delete, class:"text-white btn btn-danger" %>
+</div>
+
+
